@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/P1013282\ 1.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 300px;
+    padding-top: 20px;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    column-gap: 28px;
+}
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    color: white;
+    text-decoration: none;
+}
+.navbar-nav .nav-link:hover {
+    color: gray;
+}
+.judul {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    padding: 186px 0 0 100px;
+}
+
+/* Struktur Wilayah */
+.page-struktur {
+    position:absolute;
+    height: 24px;
+    padding: 52px 0 0 100px;   
+}
+.page-struktur .nav-link {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 63px;
+}
+.page-struktur .nav-link:hover {
+    border-bottom: 3px solid #26648B;
+}
+.judul-struktur p {
+    padding-top: 126px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+}
+.box-korwil , .box-sekum, .box-kominfo{
+    margin-top: 34px;
+    width: 962px;
+    height: 292px;
+    background: #26648B;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+}
+.box-korwil .korwil, .wakoor, .sekum, .bendum, .kominfo {
+    position: relative;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    -webkit-text-fill-color: #26648B;
+    -webkit-text-stroke: 1.5px white;
+}
+.box-korwil .foto-korwil, .foto-wakoor, .foto-sekum1, 
+.foto-sekum2, .foto-bendum1, .foto-bendum2, .foto-kominfo {
+    position: relative;
+    height: 202px;
+    width: 150px;
+    background-image:url('../assets/Mask group.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:#D9D9D9 ;
+}
+body .lingkaran {
+    background-color: #848383;
+    width: 97px;
+    height: 97px;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.box-korwil .nama-korwil,
+.box-sekum .nama-sekum1, .nama-sekum2,
+.box-kominfo .nama-kominfo {
+    position: absolute;
+    width: 100%;
+    height: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 136px;    
+    background: rgba(0, 0, 0, 0.6);    
+}
+.box-korwil .nama-korwil p:nth-child(1),
+.box-sekum .nama-sekum1 p:nth-child(1) , .nama-sekum2 p:nth-child(1),
+.box-kominfo .nama-kominfo p:nth-child(1) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.box-korwil .nama-korwil p:nth-child(2),
+.box-sekum .nama-sekum1 p:nth-child(2) , .nama-sekum2 p:nth-child(2),
+.box-kominfo .nama-kominfo p:nth-child(2) {
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 21px;
+}
+.box-wakoor , .box-bendum{
+    margin-top: 63px;
+    width: 962px;
+    height: 292px;
+    background: #26648B;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+}
+.box-wakoor .nama-wakoor,
+.box-bendum .nama-bendum1, .nama-bendum2 {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 122px;    
+    background: rgba(0, 0, 0, 0.6);    
+}
+.box-wakoor .nama-wakoor p:nth-child(1), .nama-wakoor p:nth-child(2),
+.box-bendum .nama-bendum1 p:nth-child(1), .nama-bendum1 p:nth-child(2) , 
+.nama-bendum2 p:nth-child(1) , .nama-bendum2 p:nth-child(2) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.box-wakoor .nama-wakoor p:nth-child(3),
+.box-bendum .nama-bendum1 p:nth-child(3) , .nama-bendum2 p:nth-child(3) {
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 21px;
+}
+.box-sekum {
+    column-gap: 40px;
+    padding-left: 100px;
+    margin-top: 63px;
+}
+.box-bendum{
+    column-gap: 40px;
+    padding-right: 200px;
+    margin-top: 63px;
+}
+.box-bendum .bendum{
+    padding-left: 40px;
+}
+.box-kominfo {
+    margin-top: 63px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 292px;
+}
+.logo-footer {
+    margin-left: 100px;
+    padding-top: 70px;
+}
+.background-footer {
+    position: relative;
+    width: 73%;
+    height: 340px;
+    margin-left: auto;
+    background: #26648B;
+}
